@@ -1,0 +1,20 @@
+
+language: node_js
+
+node_js:
+  - 8
+
+env:
+  global:
+    - NODE_ENV=production
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm ci
+
+script:
+  - npm run build
+  - npm test

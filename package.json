@@ -1,0 +1,46 @@
+{
+  "name": "awesome-marvel",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Paul-Adrien Bru",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^1.2.0",
+    "@material-ui/icons": "^1.1.0",
+    "axios": "^0.18.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.2",
+    "lodash": "^4.17.10",
+    "md5": "^2.2.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-helmet": "^5.2.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "react-swipeable-views": "^0.12.13",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-plugin-react": "^7.8.2",
+    "prettier": "^1.12.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --fix",
+      "git add"
+    ]
+  }
+}

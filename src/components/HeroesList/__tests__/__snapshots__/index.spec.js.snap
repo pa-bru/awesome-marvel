@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroCard should render a list of heroes 1`] = `
+<GridWrapper
+  container={true}
+  spacing={24}
+>
+  <GridWrapper
+    item={true}
+    key="0"
+    lg={3}
+    md={4}
+    sm={6}
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+    xs={12}
+  >
+    <WithStyles(HeroCard)
+      id={1}
+    />
+  </GridWrapper>
+  <GridWrapper
+    item={true}
+    key="1"
+    lg={3}
+    md={4}
+    sm={6}
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+    xs={12}
+  >
+    <WithStyles(HeroCard)
+      id={2}
+    />
+  </GridWrapper>
+</GridWrapper>
+`;
+
+exports[`HeroCard should render correctly 1`] = `
+<GridWrapper
+  container={true}
+  spacing={24}
+/>
+`;

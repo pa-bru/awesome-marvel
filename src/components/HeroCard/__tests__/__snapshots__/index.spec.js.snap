@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroCard should render correctly 1`] = `
+<WithStyles(Card)>
+  <WithStyles(CardHeader)
+    subheader="0 comics - 0 series - 0 events"
+    title={
+      <WithStyles(Typography)
+        component="h2"
+        variant="subheading"
+      />
+    }
+  />
+  <Link
+    replace={false}
+    to="/characters/undefined"
+  >
+    <WithStyles(CardMedia)
+      image="."
+    />
+  </Link>
+  <WithStyles(CardContent)>
+    <WithStyles(Typography)
+      component="p"
+    >
+      No description for this character. Sorry.
+    </WithStyles(Typography)>
+  </WithStyles(CardContent)>
+  <WithStyles(CardActions)
+    disableActionSpacing={true}
+  >
+    <WithStyles(Button)
+      color="primary"
+      size="small"
+    >
+      <Link
+        replace={false}
+        to="/characters/undefined"
+      >
+        Detail
+      </Link>
+    </WithStyles(Button)>
+    <WithStyles(Button)
+      color="primary"
+      size="small"
+    >
+      <a
+        href="http://url.com"
+      >
+        Wiki
+      </a>
+    </WithStyles(Button)>
+    <WithStyles(Button)
+      color="primary"
+      size="small"
+    >
+      <a
+        href="http://url.com"
+      >
+        Comic Link
+      </a>
+    </WithStyles(Button)>
+  </WithStyles(CardActions)>
+</WithStyles(Card)>
+`;
+
+exports[`HeroCard should render the extended version 1`] = `
+<WithStyles(Card)>
+  <WithStyles(CardHeader)
+    subheader="0 comics - 0 series - 0 events"
+    title={
+      <WithStyles(Typography)
+        component="h1"
+        variant="title"
+      />
+    }
+  />
+  <WithStyles(CardMedia)
+    image="."
+  />
+  <WithStyles(CardContent)>
+    <WithStyles(Typography)
+      component="p"
+    >
+      No description for this character. Sorry.
+    </WithStyles(Typography)>
+    <div>
+      <WithStyles(Chip)
+        label="0 comics"
+      />
+      <WithStyles(Chip)
+        label="0 series"
+      />
+      <WithStyles(Chip)
+        label="0 events"
+      />
+    </div>
+  </WithStyles(CardContent)>
+  <WithStyles(CardActions)
+    disableActionSpacing={true}
+  >
+    <WithStyles(Button)
+      color="primary"
+      size="small"
+    >
+      <a
+        href="http://url.com"
+      >
+        Wiki
+      </a>
+    </WithStyles(Button)>
+    <WithStyles(Button)
+      color="primary"
+      size="small"
+    >
+      <a
+        href="http://url.com"
+      >
+        Comic Link
+      </a>
+    </WithStyles(Button)>
+  </WithStyles(CardActions)>
+</WithStyles(Card)>
+`;

@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorBoundary should display a fallback error message when error occurs 1`] = `
+<ErrorBoundary
+  classes={Object {}}
+>
+  <div>
+    <Head
+      description="An error occured"
+      title="Oups..."
+    >
+      <HelmetWrapper
+        defer={true}
+        encodeSpecialCharacters={true}
+      >
+        <SideEffect(NullComponent)
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "An error occured",
+                "name": "description",
+              },
+              Object {
+                "content": "Oups...",
+                "name": "og:title",
+              },
+              Object {
+                "content": "An error occured",
+                "name": "og:description",
+              },
+              Object {
+                "content": "Oups...",
+                "name": "twitter:title",
+              },
+              Object {
+                "content": "An error occured",
+                "name": "twitter:description",
+              },
+              Object {
+                "content": "/icon.png",
+                "name": "twitter:image",
+              },
+              Object {
+                "content": "/icon.png",
+                "name": "og:image",
+              },
+            ]
+          }
+          title="Oups..."
+          titleAttributes={Object {}}
+        >
+          <NullComponent
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "An error occured",
+                  "name": "description",
+                },
+                Object {
+                  "content": "Oups...",
+                  "name": "og:title",
+                },
+                Object {
+                  "content": "An error occured",
+                  "name": "og:description",
+                },
+                Object {
+                  "content": "Oups...",
+                  "name": "twitter:title",
+                },
+                Object {
+                  "content": "An error occured",
+                  "name": "twitter:description",
+                },
+                Object {
+                  "content": "/icon.png",
+                  "name": "twitter:image",
+                },
+                Object {
+                  "content": "/icon.png",
+                  "name": "og:image",
+                },
+              ]
+            }
+            title="Oups..."
+            titleAttributes={Object {}}
+          />
+        </SideEffect(NullComponent)>
+      </HelmetWrapper>
+    </Head>
+    <WithStyles(Typography)
+      variant="headline"
+    >
+      <Typography
+        align="inherit"
+        classes={
+          Object {
+            "alignCenter": "MuiTypography-alignCenter-14",
+            "alignJustify": "MuiTypography-alignJustify-16",
+            "alignLeft": "MuiTypography-alignLeft-13",
+            "alignRight": "MuiTypography-alignRight-15",
+            "body1": "MuiTypography-body1-10",
+            "body2": "MuiTypography-body2-9",
+            "button": "MuiTypography-button-12",
+            "caption": "MuiTypography-caption-11",
+            "colorError": "MuiTypography-colorError-24",
+            "colorInherit": "MuiTypography-colorInherit-20",
+            "colorPrimary": "MuiTypography-colorPrimary-21",
+            "colorSecondary": "MuiTypography-colorSecondary-22",
+            "colorTextSecondary": "MuiTypography-colorTextSecondary-23",
+            "display1": "MuiTypography-display1-5",
+            "display2": "MuiTypography-display2-4",
+            "display3": "MuiTypography-display3-3",
+            "display4": "MuiTypography-display4-2",
+            "gutterBottom": "MuiTypography-gutterBottom-18",
+            "headline": "MuiTypography-headline-6",
+            "noWrap": "MuiTypography-noWrap-17",
+            "paragraph": "MuiTypography-paragraph-19",
+            "root": "MuiTypography-root-1",
+            "subheading": "MuiTypography-subheading-8",
+            "title": "MuiTypography-title-7",
+          }
+        }
+        color="default"
+        gutterBottom={false}
+        headlineMapping={
+          Object {
+            "body1": "p",
+            "body2": "aside",
+            "display1": "h1",
+            "display2": "h1",
+            "display3": "h1",
+            "display4": "h1",
+            "headline": "h1",
+            "subheading": "h3",
+            "title": "h2",
+          }
+        }
+        noWrap={false}
+        paragraph={false}
+        variant="headline"
+      >
+        <h1
+          className="MuiTypography-root-1 MuiTypography-headline-6"
+        >
+          An error has occured, please reload the page.
+        </h1>
+      </Typography>
+    </WithStyles(Typography)>
+    <pure(BugReport)>
+      <BugReport>
+        <WithStyles(SvgIcon)>
+          <SvgIcon
+            classes={
+              Object {
+                "colorAction": "MuiSvgIcon-colorAction-28",
+                "colorDisabled": "MuiSvgIcon-colorDisabled-30",
+                "colorError": "MuiSvgIcon-colorError-29",
+                "colorPrimary": "MuiSvgIcon-colorPrimary-26",
+                "colorSecondary": "MuiSvgIcon-colorSecondary-27",
+                "root": "MuiSvgIcon-root-25",
+              }
+            }
+            color="inherit"
+            viewBox="0 0 24 24"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-25"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z"
+                />
+              </g>
+            </svg>
+          </SvgIcon>
+        </WithStyles(SvgIcon)>
+      </BugReport>
+    </pure(BugReport)>
+  </div>
+</ErrorBoundary>
+`;
+
+exports[`ErrorBoundary should display the children component when no error was thrown 1`] = `
+<ErrorBoundary
+  classes={Object {}}
+>
+  <GoodChild>
+    <div>
+      COUCOU
+    </div>
+  </GoodChild>
+</ErrorBoundary>
+`;

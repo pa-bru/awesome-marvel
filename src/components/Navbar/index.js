@@ -26,7 +26,7 @@ const styles = {
   },
 }
 
-class Navbar extends Component {
+export class Navbar extends Component {
   static propTypes = {
     classes: PropTypes.object.isRequired,
     children: PropTypes.node,

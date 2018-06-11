@@ -16,7 +16,7 @@ const initialState = {
   nextOffset: 0,
 }
 
-const main = (state = initialState, action) => {
+export const main = (state = initialState, action) => {
   switch (action.type) {
     case mainListTypes.FETCH_HEROES_REQUEST:
       return {
@@ -89,7 +89,7 @@ const handleAddToHistory = (state, action) => {
   return newState
 }
 
-const history = (
+export const history = (
   state = {
     isFetching: false,
     error: undefined,

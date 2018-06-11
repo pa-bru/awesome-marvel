@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar should render correctly 1`] = `
+<React.Fragment>
+  <WithStyles(AppBar)
+    position="fixed"
+  >
+    <WithStyles(Toolbar)>
+      <WithStyles(IconButton)
+        aria-label="Menu"
+        color="inherit"
+        onClick={[Function]}
+      >
+        <pure(Menu) />
+      </WithStyles(IconButton)>
+      <WithStyles(Typography)
+        color="inherit"
+        variant="title"
+      >
+        Awesome Marvel
+      </WithStyles(Typography)>
+    </WithStyles(Toolbar)>
+  </WithStyles(AppBar)>
+  <WithStyles(Drawer)
+    onClose={[Function]}
+    open={false}
+  >
+    <div
+      onClick={[Function]}
+      role="button"
+    >
+      <WithStyles(List)
+        component="nav"
+      >
+        <Link
+          replace={false}
+          to="/"
+        >
+          <WithStyles(ListItem)
+            button={true}
+          >
+            <WithStyles(ListItemIcon)>
+              <pure(Home) />
+            </WithStyles(ListItemIcon)>
+            <WithStyles(ListItemText)
+              primary="Home"
+            />
+          </WithStyles(ListItem)>
+        </Link>
+        <Link
+          replace={false}
+          to="/about"
+        >
+          <WithStyles(ListItem)
+            button={true}
+          >
+            <WithStyles(ListItemIcon)>
+              <pure(Info) />
+            </WithStyles(ListItemIcon)>
+            <WithStyles(ListItemText)
+              primary="About"
+            />
+          </WithStyles(ListItem)>
+        </Link>
+      </WithStyles(List)>
+      <WithStyles(Divider) />
+      <WithStyles(Connect(HistoryList)) />
+    </div>
+  </WithStyles(Drawer)>
+</React.Fragment>
+`;
+
+exports[`Navbar should render with a child 1`] = `
+<React.Fragment>
+  <WithStyles(AppBar)
+    position="fixed"
+  >
+    <WithStyles(Toolbar)>
+      <WithStyles(IconButton)
+        aria-label="Menu"
+        color="inherit"
+        onClick={[Function]}
+      >
+        <pure(Menu) />
+      </WithStyles(IconButton)>
+      <WithStyles(Typography)
+        color="inherit"
+        variant="title"
+      >
+        Awesome Marvel
+      </WithStyles(Typography)>
+    </WithStyles(Toolbar)>
+  </WithStyles(AppBar)>
+  <WithStyles(Drawer)
+    onClose={[Function]}
+    open={false}
+  >
+    <div
+      onClick={[Function]}
+      role="button"
+    >
+      <WithStyles(List)
+        component="nav"
+      >
+        <Link
+          replace={false}
+          to="/"
+        >
+          <WithStyles(ListItem)
+            button={true}
+          >
+            <WithStyles(ListItemIcon)>
+              <pure(Home) />
+            </WithStyles(ListItemIcon)>
+            <WithStyles(ListItemText)
+              primary="Home"
+            />
+          </WithStyles(ListItem)>
+        </Link>
+        <Link
+          replace={false}
+          to="/about"
+        >
+          <WithStyles(ListItem)
+            button={true}
+          >
+            <WithStyles(ListItemIcon)>
+              <pure(Info) />
+            </WithStyles(ListItemIcon)>
+            <WithStyles(ListItemText)
+              primary="About"
+            />
+          </WithStyles(ListItem)>
+        </Link>
+      </WithStyles(List)>
+      <WithStyles(Divider) />
+      <WithStyles(Connect(HistoryList)) />
+    </div>
+  </WithStyles(Drawer)>
+  <Child />
+</React.Fragment>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryListItem should render a ListItem correctly 1`] = `
+<WithStyles(ListItem)
+  button={true}
+  dense={true}
+  onClick={[Function]}
+>
+  <WithStyles(Avatar)
+    aria-label="Recipe"
+    src="."
+  />
+  <WithStyles(ListItemText)
+    primary="Thor"
+    secondary="0 comics - 0 series - 0 events"
+  />
+  <WithStyles(ListItemSecondaryAction)>
+    <WithStyles(IconButton)
+      aria-label="Delete"
+      onClick={[Function]}
+    >
+      <pure(Delete) />
+    </WithStyles(IconButton)>
+  </WithStyles(ListItemSecondaryAction)>
+</WithStyles(ListItem)>
+`;

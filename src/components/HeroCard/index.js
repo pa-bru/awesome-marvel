@@ -12,6 +12,8 @@ import CardActions from '@material-ui/core/CardActions'
 import Chip from '@material-ui/core/Chip'
 import Typography from '@material-ui/core/Typography'
 
+import styles from './styles'
+
 const DEFAULT_DESCRIPTION = 'No description for this character. Sorry.'
 
 const getLink = (type, urls) => {
@@ -19,29 +21,7 @@ const getLink = (type, urls) => {
   return urlObj && urlObj.url
 }
 
-const styles = theme => ({
-  card: {
-    width: '100%',
-  },
-  media: {
-    height: 200,
-  },
-  descriptionLimit: {
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    display: '-webkit-box',
-    WebkitBoxOrient: 'vertical',
-    WebkitLineClamp: 2,
-  },
-  chips: {
-    marginTop: theme.spacing.unit * 2,
-  },
-  chip: {
-    marginRight: theme.spacing.unit,
-  },
-})
-
-class HeroCard extends Component {
+export class HeroCard extends Component {
   static propTypes = {
     classes: PropTypes.object.isRequired,
     urls: PropTypes.array,
@@ -76,6 +56,10 @@ class HeroCard extends Component {
       available: 0,
     },
     extended: false,
+    thumbnail: {
+      path: '',
+      extension: '',
+    },
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -155,7 +139,7 @@ class HeroCard extends Component {
           <CardMedia className={classes.media} image={this.computeThumbnail()} title={name} />
         </Link>
         <CardContent>
-          <Typography component="p" className={extended ? '' : classes.descriptionLimit}>
+          <Typography component="p" className={classes.descriptionLimit}>
             {description || DEFAULT_DESCRIPTION}
           </Typography>
         </CardContent>

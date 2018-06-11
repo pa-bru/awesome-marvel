@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingView should render correctly 1`] = `
+<React.Fragment>
+  <Head
+    title="Loading..."
+  />
+  <Center>
+    <WithStyles(CircularProgress)
+      color="secondary"
+    />
+  </Center>
+</React.Fragment>
+`;

@@ -2,6 +2,18 @@
 
 A React Project in the Marvel universe.
 
+⚠️ **WIP** ⚠️ : Working on tests with Jest and Enzyme. For the moment global components and helpers are tested. It remains root files, sotre (reducers/actions) and views to test. To see the current coverage use that command:
+
+```sh
+$ npm run test:coverage
+```
+
+Then open the file with the command below
+
+```sh
+$ npm run test:coverage:open
+```
+
 ## Setup
 
 First, clone or download the repository.
@@ -19,9 +31,9 @@ $ npm start
 
 ## Features
 
-- A listing of marvel heroes with infinite scroll
+- A `listing` of marvel heroes with infinite scroll
 - A `detail` page to see specific data of an hero
-- A user history management in the sidebar menu.
+- A user `history` management in the sidebar menu.
   - a list of the latest heroes the have seen
   - a button on each history element to delete it one by one
   - a button to clear all the history
@@ -40,12 +52,12 @@ $ npm start
 - React Router - for the routing
 - React Helmet - to manage title and meta tag information
 - React Swipeable Views - to add swipe interactions on mobile
-- Jest & Enzyme for tests (no setup for the moment)
+- Jest & Enzyme for tests (Work In Progress)
 - Babel for ES6 and ES7 magic, Webpack, ESLint, Prettier and other stuff which comes with CRA
 
 ## TODO
 
-- Add tests with Jest and Enzyme (WTF there is no test for the moment 🙀)
+- Add tests with Jest and Enzyme (Work In Progress 🙀)
 - Add a server to secure private keys
 - Use the new React suspense API to load elements together
 - Use the new Context API.

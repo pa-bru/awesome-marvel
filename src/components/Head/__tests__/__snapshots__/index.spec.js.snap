@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Head should render correctly 1`] = `
+<HelmetWrapper
+  defer={true}
+  encodeSpecialCharacters={true}
+>
+  <title />
+  <meta
+    name="description"
+  />
+  <meta
+    name="og:title"
+  />
+  <meta
+    name="og:description"
+  />
+  <meta
+    name="twitter:title"
+  />
+  <meta
+    name="twitter:description"
+  />
+  <meta
+    content="/icon.png"
+    name="twitter:image"
+  />
+  <meta
+    content="/icon.png"
+    name="og:image"
+  />
+</HelmetWrapper>
+`;
+
+exports[`Head should render with a child 1`] = `
+<HelmetWrapper
+  defer={true}
+  encodeSpecialCharacters={true}
+>
+  <title />
+  <meta
+    name="description"
+  />
+  <meta
+    name="og:title"
+  />
+  <meta
+    name="og:description"
+  />
+  <meta
+    name="twitter:title"
+  />
+  <meta
+    name="twitter:description"
+  />
+  <meta
+    content="/icon.png"
+    name="twitter:image"
+  />
+  <meta
+    content="/icon.png"
+    name="og:image"
+  />
+  <meta
+    content="additional meta tag for the Head component"
+    property="og:title"
+  />
+</HelmetWrapper>
+`;

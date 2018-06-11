@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorView should render correctly with a default message 1`] = `
+<React.Fragment>
+  <Head
+    title="Oups..."
+  />
+  <Center>
+    <WithStyles(Typography)
+      color="secondary"
+      variant="body1"
+    >
+      Something went wrong.
+    </WithStyles(Typography)>
+  </Center>
+</React.Fragment>
+`;
+
+exports[`ErrorView should render with a child 1`] = `
+<React.Fragment>
+  <Head
+    title="Oups..."
+  />
+  <Center>
+    <WithStyles(Typography)
+      color="secondary"
+      variant="body1"
+    >
+      Coucou
+    </WithStyles(Typography)>
+  </Center>
+</React.Fragment>
+`;

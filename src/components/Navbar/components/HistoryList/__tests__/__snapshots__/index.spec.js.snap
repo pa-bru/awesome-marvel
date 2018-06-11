@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryList should render a specific message when the list is empty 1`] = `
+<WithStyles(List)
+  component="div"
+  disablePadding={true}
+  subheader={
+    <WithStyles(ListSubheader)
+      component="div"
+    >
+      Your History
+    </WithStyles(ListSubheader)>
+  }
+>
+  <WithStyles(ListItem)
+    dense={true}
+  >
+    <WithStyles(ListItemText)
+      primary="No History, start navigating to see your history"
+    />
+  </WithStyles(ListItem)>
+</WithStyles(List)>
+`;
+
+exports[`HistoryList should render the error view 1`] = `
+<ErrorView>
+  Bad request
+</ErrorView>
+`;
+
+exports[`HistoryList should render the list 1`] = `
+<WithStyles(List)
+  component="div"
+  disablePadding={true}
+  subheader={
+    <WithStyles(ListSubheader)
+      component="div"
+    >
+      Your History
+    </WithStyles(ListSubheader)>
+  }
+>
+  <React.Fragment>
+    <withRouter(HistoryListItem)
+      id={1}
+      key="0"
+      onClick={[Function]}
+    />
+    <withRouter(HistoryListItem)
+      id={2}
+      key="1"
+      onClick={[Function]}
+    />
+    <WithStyles(Button)
+      color="default"
+      onClick={[Function]}
+      variant="contained"
+    >
+      Clear History
+    </WithStyles(Button)>
+  </React.Fragment>
+</WithStyles(List)>
+`;
+
+exports[`HistoryList should render the loading view 1`] = `<LoadingView />`;

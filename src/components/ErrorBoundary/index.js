@@ -20,10 +20,10 @@ const styles = {
   },
 }
 
-class ErrorBoundary extends Component {
+export class ErrorBoundary extends Component {
   static propTypes = {
     children: PropTypes.node,
-    classes: PropTypes.object.isRequired,
+    classes: PropTypes.object,
   }
 
   state = {

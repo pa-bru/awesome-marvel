@@ -26,21 +26,49 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "4.19.1",
     "eslint-plugin-react": "^7.8.2",
+    "opn-cli": "^3.1.0",
     "prettier": "^1.12.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=true react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test:ci": "CI=true npm test",
+    "test:coverage": "npm test -- --coverage",
+    "test:coverage:open": "opn ./coverage/lcov-report/index.html",
+    "test:update": "npm test -- --updateSnapshot",
     "eject": "react-scripts eject",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "prepush": "npm run test:coverage"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
+      "eslint",
       "prettier --fix",
       "git add"
     ]
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*/styles.js",
+      "!src/registerServiceWorker.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }

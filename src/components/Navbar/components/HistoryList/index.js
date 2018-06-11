@@ -23,7 +23,7 @@ const styles = {
   },
 }
 
-class HistoryList extends Component {
+export class HistoryList extends Component {
   static propTypes = {
     classes: PropTypes.object.isRequired,
     loadHistoryList: PropTypes.func.isRequired,
@@ -90,7 +90,7 @@ class HistoryList extends Component {
   }
 }
 
-const mapStateToProps = ({ list: { history }, heroes }) => {
+export const mapStateToProps = ({ list: { history }, heroes }) => {
   const historyList = history.ids.map(id => heroes[id])
   const isIncomplete = historyList.some(item => !item)
 
@@ -107,6 +107,10 @@ const mapDispatchToProps = {
   clearHistory: listActions.clearHistory,
 }
 
-export default compose(withStyles(styles), connect(mapStateToProps, mapDispatchToProps))(
-  HistoryList
-)
+export default compose(
+  withStyles(styles),
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )
+)(HistoryList)

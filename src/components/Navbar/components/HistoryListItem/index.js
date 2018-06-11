@@ -9,7 +9,7 @@ import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
 import Avatar from '@material-ui/core/Avatar'
 import DeleteIcon from '@material-ui/icons/Delete'
 
-class HistoryListItem extends Component {
+export class HistoryListItem extends Component {
   static propTypes = {
     thumbnail: PropTypes.shape({
       path: PropTypes.string,
@@ -31,6 +31,10 @@ class HistoryListItem extends Component {
   }
 
   static defaultProps = {
+    thumbnail: {
+      path: '',
+      extension: '',
+    },
     series: {
       available: 0,
     },

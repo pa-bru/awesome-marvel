@@ -2,13 +2,16 @@
 
 A React Project in the Marvel universe.
 
-⚠️ **WIP** ⚠️ : Working on tests with Jest and Enzyme. For the moment global components and helpers are tested. It remains root files, sotre (reducers/actions) and views to test. To see the current coverage use that command:
+⚠️ **WIP** ⚠️ : Working on tests with Jest and Enzyme. For the moment global components and helpers are tested.
+It remains root files, store (reducers/actions) and views to test.
+
+To generate the current coverage use that command (don't forget to run `npm install` before):
 
 ```sh
 $ npm run test:coverage
 ```
 
-Then open the file with the command below
+Then open the generated file with the command below
 
 ```sh
 $ npm run test:coverage:open

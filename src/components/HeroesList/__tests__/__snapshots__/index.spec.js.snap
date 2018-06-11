@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HeroCard should render a list of heroes 1`] = `
-<GridWrapper
+<WithStyles(Grid)
   container={true}
   spacing={24}
 >
-  <GridWrapper
+  <WithStyles(Grid)
     item={true}
     key="0"
     lg={3}
@@ -21,8 +21,8 @@ exports[`HeroCard should render a list of heroes 1`] = `
     <WithStyles(HeroCard)
       id={1}
     />
-  </GridWrapper>
-  <GridWrapper
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
     item={true}
     key="1"
     lg={3}
@@ -38,12 +38,12 @@ exports[`HeroCard should render a list of heroes 1`] = `
     <WithStyles(HeroCard)
       id={2}
     />
-  </GridWrapper>
-</GridWrapper>
+  </WithStyles(Grid)>
+</WithStyles(Grid)>
 `;
 
 exports[`HeroCard should render correctly 1`] = `
-<GridWrapper
+<WithStyles(Grid)
   container={true}
   spacing={24}
 />
